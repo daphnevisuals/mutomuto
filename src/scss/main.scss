@@ -1,0 +1,40 @@
+@import "base";
+@import "layout";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/headintro";
+@import "modules/equipe";
+@import "modules/hp-appdescription";
+@import "modules/hp-calendrier";
+@import "modules/hp-sponsors";
+@import "modules/calendrier";
+
+@font-face {
+  font-family: "AgrandirRegular";
+  src: url("/src/font/PPAgrandir-Regular.woff2") format("woff2"),
+    url("/src/font/PPAgrandir-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AgrandirItalic";
+  src: url("/src/font/PPAgrandir-Italic.woff2") format("woff2"),
+    url("/src/font/PPAgrandir-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AgrandirBold";
+  src: url("/src/font/PPAgrandir-Bold.woff2") format("woff2"),
+    url("/src/font/PPAgrandir-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AgrandirGrandheavy";
+  src: url("/src/font/PPAgrandir-GrandHeavy.woff2") format("woff2"),
+    url("/src/font/PPAgrandir-GrandHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AgrandirGrandRegular";
+  src: url("/src/font/PPAgrandir-GrandRegular.woff2") format("woff2"),
+    url("/src/font/PPAgrandir-GrandRegular.woff") format("woff");
+}

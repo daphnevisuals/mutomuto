@@ -1,0 +1,63 @@
+/* ====================================
+// css variables
+// ==================================== */
+
+:root {
+  --black-color: #1b1b1b;
+  --yellow-color: #fae384;
+  --white-color: #fffefe;
+  --grey-color: #5a5a5a;
+}
+
+/* ====================================
+// reset rules
+// ==================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: "AgrandirRegular";
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+}
+
+h2 {
+  font-family: "AgrandirGrandheavy";
+  text-transform: uppercase;
+}
+
+/* ====================================
+// base rules
+// ==================================== */
+body,
+footer h4,
+h3,
+h2 {
+  font-size: 15px;
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}

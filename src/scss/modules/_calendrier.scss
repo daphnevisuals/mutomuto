@@ -1,0 +1,49 @@
+.calendrier-background {
+  background-color: var(--black-color);
+}
+
+.l-page-content.calendrier {
+  width: 80% !important;
+  padding: 50px 0;
+  margin: auto;
+}
+
+.calendrier-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.hp-calendrier-event.calendrier-event {
+  @media (min-width: 768px) {
+    transition-property: transform;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(110%);
+    }
+  }
+}
+
+.l-calendrier-info.calendrier-info h3 {
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+.l-calendrier-info.calendrier-info h2 {
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.l-calendrier-info.calendrier-info {
+  @media (min-width: 768px) {
+    left: 40px;
+    top: -10px;
+  }
+}

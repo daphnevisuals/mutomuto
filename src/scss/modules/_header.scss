@@ -1,0 +1,243 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  width: 100%;
+  // position: fixed;
+}
+
+.header-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+// BURGERMENU
+// ---------------------------------
+#burger-menu {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  overflow: visible;
+  position: relative;
+  z-index: 4;
+  @media (min-width: 1064px) {
+    display: none;
+  }
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+  background: var(--yellow-color);
+  border-radius: 50px;
+  display: block;
+  height: 3px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+#burger-menu span:before,
+#burger-menu span:after {
+  content: "";
+}
+#burger-menu span {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+}
+#burger-menu span:before {
+  left: 0px;
+  top: -10px;
+  width: 16px;
+}
+#burger-menu span:after {
+  left: 0px;
+  top: 10px;
+  width: 20px;
+}
+
+#burger-menu.close span {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+#burger-menu.close span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+}
+#burger-menu.close span:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+}
+// HEADER NAV
+// ----------------------------------------
+//
+#header-nav.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 100px;
+  background: var(--black-color);
+  @media (min-width: 1064px) {
+    display: none;
+  }
+}
+
+#header-nav {
+  z-index: 4;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+  @media (min-width: 1064px) {
+    display: none;
+  }
+}
+
+#header-nav nav {
+  background: black;
+}
+
+#header-nav ul {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1064px) {
+    flex-direction: row;
+  }
+}
+
+#header-nav li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#header-nav a {
+  text-decoration: none;
+  font-family: "AgrandirGrandHeavy";
+  font-size: 20px;
+  color: var(--white-color);
+  &:hover {
+    color: var(--yellow-color);
+  }
+}
+
+.header-nav-download {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.header-nav-download h2 {
+  font-size: 20px;
+  color: var(--yellow-color);
+}
+
+.header-nav-download-stores {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.imgsvg.header {
+  width: 100%;
+  padding: 0;
+}
+.imgpng.header {
+  width: 50%;
+  padding: 0;
+}
+
+// .header-nav-download {
+// }
+
+.header-nav-desktop {
+  display: none;
+  @media (min-width: 1064px) {
+    display: contents;
+  }
+}
+
+.header-nav-desktop ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.header-nav-desktop a {
+  text-decoration: none;
+  font-size: 15px;
+  @media (min-width: 1300px) {
+    font-size: 20px;
+  }
+  font-family: "AgrandirGrandHeavy";
+  color: var(--white-color);
+  &:hover {
+    color: var(--yellow-color);
+  }
+}
+
+// FIN HEADER NAV
+// ---------------------------------------
+.langue-nav nav {
+  display: inline-block;
+  position: relative;
+}
+.langue p {
+  padding-right: 10px;
+}
+.langue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.langue-liste {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+
+.langue-liste a {
+  display: block;
+  padding: 5px 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &:hover {
+    color: var(--yellow-color);
+  }
+}
+
+.langue:hover .langue-liste {
+  opacity: 1;
+}
+
+.langue-liste ul {
+  position: absolute;
+  margin-top: 20px;
+  background-color: var(--black-color);
+  padding: 10px;
+}

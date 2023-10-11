@@ -1,0 +1,54 @@
+.hp-calendrier {
+  background-color: var(--black-color);
+  position: relative;
+}
+
+.hp-calendrier h2 {
+  color: var(--yellow-color);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.hp-calendrier-wrapper {
+  width: 80%;
+  margin: auto;
+  padding: 100px 0;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  @media (min-width: 1064px) {
+    padding: 160px 0;
+  }
+  @media (min-width: 1600px) {
+    padding: 300px 0;
+  }
+}
+
+.hp-calendrier-event-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calendrier-img,
+.l-articlebox-img {
+  filter: saturate(0%) brightness(50%);
+  position: relative;
+  display: block;
+  max-height: 300px;
+  min-height: 100px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    filter: saturate(100%);
+  }
+}
+
+.l-articleebox-img {
+  cursor: auto;
+}
+
+.calendrier-img {
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+.hp-sponsors {
+  padding: 50px 0;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  @media (min-width: 1064px) {
+    padding: 200px 0 160px 0;
+  }
+  @media (min-width: 1700px) {
+    padding: 300px 0 160px 0;
+  }
+}
+.hp-sponsors h2 {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hp-sponsors-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  @media (max-width: 768px) {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: hp-sponsors-logos-animation 15s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.hp-sponsors-logos-animation img {
+  margin: 0 20px;
+}
+
+@keyframes hp-sponsors-logos-animation {
+  0% {
+    margin-left: 500px;
+  }
+  100% {
+    margin-left: -1500px;
+  }
+}
+
+.hp-sponsors-logos-animation.wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.hp-sponsors-logo.png,
+.hp-sponsors-logo.svg {
+  width: 80%;
+  height: fit-content;
+  @media (min-width: 768px) {
+    width: 20%;
+    height: fit-content;
+  }
+}
+
+.hp-sponsors-logo.png.loterieromande,
+.hp-sponsors-logo.svg.suisa {
+  width: 40%;
+  height: fit-content;
+  @media (min-width: 768px) {
+    width: 20%;
+    height: fit-content;
+  }
+}
